@@ -77,10 +77,18 @@ class Robot():
 
 
 if __name__ == "__main__":
-    chosen = input("1 player or 0 players?")
-    if chosen == "1":
-        option = "1"
-    elif chosen == "0":
-        option = "0"
+    while 1:
+        chosen = input("2 players[2], 1 player[1] or 0 players[0]?")
+        if chosen == "1":
+            option = "1"
+            break
+        elif chosen == "0":
+            option = "0"
+            break
+        elif chosen == "2":
+            option = "2"
+            break
+        else:
+            print("I didnt understand please type 0, 1 or 2")
 
     main.main(name = option)
